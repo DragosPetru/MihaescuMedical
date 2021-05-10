@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmi_result">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/h0"
+        app:layout_constraintGuide_percent="0.41"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/h1"
+        app:layout_constraintGuide_percent="0.71"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/h2"
+        app:layout_constraintGuide_percent="0.74"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/h3"
+        app:layout_constraintGuide_percent="0.82"
+        />
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+
+        android:src="@drawable/ok"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_r"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#7ECBF2"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/h1"
+        app:layout_constraintEnd_toEndOf="@id/v1"
+        app:layout_constraintStart_toStartOf="@id/v0"
+        app:layout_constraintTop_toTopOf="@+id/h0">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/bmidisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="55"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:textStyle="bold"
+                android:text="Gender"
+                android:id="@+id/genderdisplay"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/bmicategory"
+                android:text="Your BMI category is"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/recalculatebmi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/v1"
+        app:layout_constraintStart_toStartOf="@id/v0"
+        app:layout_constraintTop_toBottomOf="@id/h2"
+        app:layout_constraintBottom_toTopOf="@id/h3"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="ReCalculate Your BMI"
+        android:backgroundTint="#7ECBF2"
+        >
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

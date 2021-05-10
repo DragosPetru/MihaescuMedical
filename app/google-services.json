@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "804030796856",
+    "project_id": "mihaescumed",
+    "storage_bucket": "mihaescumed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804030796856:android:f26ff0ef76fee68464c2cd",
+        "android_client_info": {
+          "package_name": "com.example.mihaescumedical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804030796856-515g9f6nnid2rnm3tduibe79or6lsdee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbA_kukTdOaCxqD4M01_xV1iWYuwWmahA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804030796856-515g9f6nnid2rnm3tduibe79or6lsdee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
